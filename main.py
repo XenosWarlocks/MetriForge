@@ -6,7 +6,7 @@ import json
 import random
 import string
 import re
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict
 import argparse
 import logging
 import sys
@@ -171,7 +171,7 @@ class SmartTestEmailGenerator:
        
         try:
             genai.configure(api_key=api_key)
-            self.model = genai.GenerativeModel('gemini-pro')
+            self.model = genai.GenerativeModel('gemini-2.0-flash-lite')
             self.metadata = EnhancedTestEmailMetadata()
             self.metrics_generator = MetricsGenerator()
         except Exception as e:
@@ -546,3 +546,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# python main.py --api-key AIzaSyDV4c47DjkrLYw7aCGSpao3L3Wkykw2JDk --num-emails 5 --word-count 150
