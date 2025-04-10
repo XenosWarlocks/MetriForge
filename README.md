@@ -152,5 +152,5 @@ For questions and support, please open an issue or contact the maintainers.
 
 ---
 
-Made with ❤️ by [Xenos Warlocks]
+Made with ❤️ by Xenos Warlocks
 
